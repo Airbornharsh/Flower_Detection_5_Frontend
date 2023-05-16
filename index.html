@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flower Detection 5</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.2.1/axios.min.js"></script>
+    <link rel="stylesheet" href="./index.css">
+  </head>
+  <body>
+    <img id="imgdisplay" alt="Photo" src="./assets/image.png"></img>
+    <form action="http://127.0.0.1:8000/api/flower-detection-5" method="post">
+      <label for="img_input" id="img_input_label">
+        <input type="file" value="files" id="img_input"/>
+        Upload Image</label>
+      <button type="submit">Check</button>
+    </form>
+    <div id="loader""><div></div><div></div><div></div><div></div></div>
+    <div id="result"></div>
+  </body>
+  <script src="./index.js"></script>
+</html>

@@ -1,0 +1,104 @@
+body {
+  width: 100vw;
+  /* height: 100vh; */
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Courier New", Courier, monospace;
+}
+
+#imgdisplay {
+  display: flex;
+  justify-content: center;
+  max-width: 30rem;
+  width: 90vw;
+  margin: 1rem 0;
+}
+
+#img_input {
+  display: none;
+}
+
+#img_input_label {
+  border: 1px solid #ccc;
+  display: inline-block;
+  padding: 6px 12px;
+  cursor: pointer;
+}
+
+#img_input_label:hover {
+  background-color: #ddd;
+}
+
+#img_input_label:active {
+  background-color: #ccc;
+}
+
+#img_input_label:disabled {
+  background-color: #eee;
+  cursor: not-allowed;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+form button[type="submit"] {
+  border: 1px solid #ccc;
+  padding: 6px 12px;
+  cursor: pointer;
+  font-family: "Courier New", Courier, monospace;
+  background-color: rgb(174, 0, 255);
+  color: white;
+}
+
+#loader {
+  display: block;
+  position: relative;
+  width: 3rem;
+  height: 3rem;
+}
+#loader div {
+  box-sizing: border-box;
+  display: block;
+  position: absolute;
+  width: 2rem;
+  height: 2rem;
+  margin: 8px;
+  border: 0.2rem solid rgb(174, 0, 255);
+  border-radius: 50%;
+  animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+  border-color: rgb(174, 0, 255) transparent transparent transparent;
+}
+#loader div:nth-child(1) {
+  animation-delay: -0.45s;
+}
+#loader div:nth-child(2) {
+  animation-delay: -0.3s;
+}
+#loader div:nth-child(3) {
+  animation-delay: -0.15s;
+}
+@keyframes lds-ring {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+#result{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.4rem;
+    margin: 0.6rem 0;
+}
