@@ -29,7 +29,7 @@ form.addEventListener("submit", async (e) => {
 
   try {
     let res = await axios.post(
-      "https://dl-api.azurewebsites.net/api/flower-detection-5",
+      "https://dl.harshkeshri.com/api/animal-detection",
       formData,
       {
         headers: {
