@@ -29,7 +29,7 @@ form.addEventListener("submit", async (e) => {
 
   try {
     let res = await axios.post(
-      "https://5r6gl70k-8000.inc1.devtunnels.ms/api/animal-detection",
+      "https://dl.harshkeshri.com/api/animal-detection",
       formData,
       {
         headers: {
